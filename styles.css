@@ -1,0 +1,123 @@
+:root {
+    --purple: #9b2fce;
+    --purple-light: #c392da;
+    --gray: #888888;
+    --black: #303030;
+}
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--purple-light);
+}
+
+p {
+    line-height: 28px;
+}
+
+/* NAVBAR START */
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar-border {
+    margin-top: 5px;
+    background-color: var(--gray);
+    height: 1px;
+}
+  
+.navobj {
+    float: left;
+}
+
+.navobj a {    
+    display: block;
+    text-align: center;
+    font-size: large;
+    padding: 12px 12px;
+}
+
+.active {
+    font-weight: 500;
+}
+
+.inactive {
+    color: var(--black);
+}
+
+/* NAVBAR END */
+
+/* NAME START */
+
+#name {
+    color: var(--purple);
+}
+
+.name-small {
+    color: var(--black);
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+/* NAME END */
+
+/* INTRO START */
+
+#intro-text {
+    display: block;
+    width: 60%;
+    float: left;
+}
+
+#intro-profile {
+    width: 30%;
+    float: right;
+    margin-left: 1rem;
+    display: block;
+}
+
+/* INTRO END */
+
+/* SECTION START */
+
+.head {
+    display: inline-block;
+    width: 100%;
+    color: var(--black);
+    line-height: 28px;
+}
+
+.impt {
+    color: var(--purple);
+}
+
+.skills {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+/* SECTION END */
