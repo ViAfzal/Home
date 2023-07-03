@@ -6,11 +6,11 @@
 }
 
 body {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 3.5vmin;
     color: var(--black);
 }
 
@@ -25,7 +25,7 @@ a:hover {
 }
 
 p {
-    line-height: 28px;
+    line-height: 4.5vh;
 }
 
 /* NAVBAR START */
@@ -35,12 +35,13 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: 3vmin;
 }
 
 #navbar-border {
-    margin-top: 5px;
+    margin-top: 1vh;
     background-color: var(--gray);
-    height: 1px;
+    height: 0.1vh;
 }
   
 .navobj {
@@ -50,8 +51,7 @@ p {
 .navobj a {    
     display: block;
     text-align: center;
-    font-size: large;
-    padding: 25px 25px;
+    padding: 3vh 3vw;
 }
 
 .active {
@@ -73,13 +73,13 @@ p {
 .name-small {
     color: var(--black);
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 6.5vmin;
 }
 
 h1 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 6.5vmin;
 }
 
 /* NAME END */
@@ -95,9 +95,19 @@ h1 {
 #intro-profile {
     width: 30%;
     float: right;
-    margin-left: 1rem;
     display: block;
+    line-height: 5.5vh;
     text-align: right;
+}
+
+a {
+    margin: 0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
 }
 
 /* INTRO END */
@@ -108,7 +118,7 @@ h1 {
     display: inline-block;
     width: 100%;
     color: var(--black);
-    line-height: 28px;
+    line-height: 4vh;
 }
 
 .impt {
