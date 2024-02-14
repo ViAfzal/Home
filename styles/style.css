@@ -323,9 +323,14 @@ header {
     height: 85vh;
   }
 }
+@media (max-width: 780px) {
+  header {
+    height: 150vh !important;
+  }
+}
 header .imageContainer {
   width: 80%;
-  max-width: 230px;
+  max-width: 45vh;
 }
 header .imageContainer img {
   width: 100%;
