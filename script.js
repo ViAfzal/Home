@@ -7,4 +7,5 @@ $(document).ready(() => {
     $(".menu-toggle").toggleClass("menu-open");
     $(".menu").toggleClass("active");
   });
+  $(this).scrollTop(0);
 });
