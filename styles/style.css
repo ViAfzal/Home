@@ -15,6 +15,11 @@ section {
   --violet:#a480de;
   --rich-violet:#7842cf;
   --dark-violet:#4d2392;
+  
+  --large-text: 4rem;
+  --medium-text: 2.8rem;
+  --small-medium-text: 2.5rem;
+  --small-text: 2rem;
 }
 
 [hidden] {
@@ -37,7 +42,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: var(--small-text);
 }
 
 img {
@@ -190,7 +195,7 @@ nav .menu li a {
   margin: auto;
   width: auto;
   background: none;
-  font-size: 2.9rem;
+  font-size: var(--large-text);
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -339,17 +344,17 @@ header .headerText {
   z-index: 1;
 }
 header .headerText h1 {
-  font-size: 3rem;
+  font-size: var(--large-text);
   font-weight: 700;
   margin: 10px 0;
   color: var(--dark-violet);
   position: relative;
-  max-width: 200px;
+  max-width: 275px;
   width: 80%;
 }
 @media (min-width: 780px) {
   header .headerText h1 {
-    font-size: 4rem;
+    font-size: var(--large-text);
     max-width: 400px;
   }
 }
@@ -381,10 +386,14 @@ header .headerText h1::after {
 header .scrollDownText {
   position: absolute;
   text-align: center;
-  padding-top: 90vh;
-  font-size: 23px;
+  padding-top: 150vh;
+  font-size: var(--medium-text);
   color: var(--dark-violet);
-  z-index: -11;
+}
+@media (min-width: 780px) {
+  header .scrollDownText {
+    padding-top: 80vh;
+  }
 }
 header .fa-angle-down {
   -webkit-animation-duration: 0.8s;
@@ -428,7 +437,7 @@ header .fa-angle-down {
 }
 header p {
   color: var(--gray);
-  font-size: 2rem;
+  font-size: var(--small-text);
   font-weight: 400;
   width: 100%;
   position: relative;
@@ -457,7 +466,7 @@ header p span {
       justify-content: space-around;
 }
 .projects h2 {
-  font-size: 3rem;
+  font-size: var(--large-text);
   color: var(--dark-violet);
   position: relative;
   margin: 0;
@@ -473,12 +482,16 @@ header p span {
   padding-top: 10px;
 }
 .projects .proj {
-  font-size: 1.8rem;
+  font-size: var(--small-text);
   padding-top: 30px;
 }
 .projects .title {
   color: var(--rich-violet);
-  font-size: 2.4rem;
+  font-size: var(--small-medium-text);
+}
+.projects .proj i, .projects .proj span {
+  color: var(--rich-violet);
+  font-size: var(--small-text);
 }
 
 @media (min-width: 550px) {
@@ -498,20 +511,20 @@ header p span {
   padding-bottom: 60px;
 }
 .skills h2 {
-  font-size: 3rem;
+  font-size: var(--large-text);
   color: var(--dark-violet);
   position: relative;
   padding-top: 50px;
 }
 .skills .section h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: var(--small-medium-text);
   color: var(--rich-violet);
   padding: 5px 0 0 0;
 }
 .skills p {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: var(--small-text);
   color: var(--gray);
 }
 
@@ -521,13 +534,13 @@ main {
 
 .contact {
   padding: 150px 0 50px 0;
-  font-size: 1.6rem;
+  font-size: var(--small-text);
   height: auto;
   z-index: -10;
 }
 .contact h2 {
   color: var(--dark-violet);
-  font-size: 3rem;
+  font-size: var(--large-text);
   padding-bottom: 30px;
   margin: 0;
   position: relative;
@@ -557,9 +570,6 @@ main {
       justify-content: space-around;
   padding: 0;
 }
-.contact .contactContainer .contactInformation .socialIcons li {
-  font-size: 2.4rem;
-}
 .contact .contactContainer .contactInformation .socialIcons li a {
   color: var(--violet);
 }
@@ -567,7 +577,7 @@ main {
   color: var(--dark-violet);
 }
 .contact .contactContainer .contactInformation .socialIcons i {
-  font-size: 30px;
+  font-size: var(--large-text);
 }
 
 footer {
@@ -579,7 +589,7 @@ footer {
   padding: 15px;
   text-align: center;
   color: var(--white);
-  font-size: 1.6rem;
+  font-size: var(--small-text);
 }
 footer p {
   margin: 0;
