@@ -202,6 +202,11 @@ nav .menu li a {
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
+@media (min-width: 780px) {
+  nav .menu li a {
+    font-size: var(--large-text);
+  }
+}
 nav .menu li a:hover, nav .menu li a:focus, nav .menu li a:active {
   color: var(--dark-violet);
 }
@@ -386,7 +391,7 @@ header .headerText h1::after {
 header .scrollDownText {
   position: absolute;
   text-align: center;
-  padding-top: 150vh;
+  padding-top: 170vh;
   font-size: var(--medium-text);
   color: var(--dark-violet);
 }
@@ -578,6 +583,11 @@ main {
 }
 .contact .contactContainer .contactInformation .socialIcons i {
   font-size: var(--large-text);
+}
+@media (max-width: 780px) {
+  .contact .contactContainer .contactInformation .socialIcons i {
+    font-size: var(--medium-text);
+  }
 }
 
 footer {
