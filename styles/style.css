@@ -195,7 +195,7 @@ nav .menu li a {
   margin: auto;
   width: auto;
   background: none;
-  font-size: var(--large-text);
+  font-size: var(--medium-text);
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -494,7 +494,7 @@ header p span {
   font-size: var(--small-text);
 }
 
-@media (min-width: 550px) {
+@media (min-width: 780px) {
   .skills {
     display: inline-block;
     width: 100%;
