@@ -482,20 +482,11 @@ header p span {
     width: 100%;
     margin: auto;
   }
-  .skills h2 {
-    padding-left: 30px;
-  }
   .skills .section {
     width: 33%;
     float: left;
     text-align: center;
     display: block;
-  }
-}
-
-@media (max-width: 550px) {
-  .skills {
-    padding-left: 30px;
   }
 }
 .skills {
